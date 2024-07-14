@@ -1,0 +1,242 @@
+{
+	"layer": "top",
+	"position": "top",
+
+	"modules-left": [
+        "custom/chatgpt",
+        "custom/wallpaper",
+        "custom/weather",
+		"hyprland/workspaces",
+        "wlr/taskbar"
+	],
+	"modules-center": [
+        "custom/uptime",
+        "user"
+	],
+	"modules-right": [
+        "temperature",
+        "custom/packages",
+		"cpu",
+		"memory",
+		"disk",
+        "bluetooth",
+        "network#wifi",
+        "battery",
+        "pulseaudio",
+		"clock",
+		"tray",
+        "custom/notification"
+	],
+    "hyprland/workspaces": {
+        "format": "{icon}",
+          "format-icons" :{
+            "1" : "1",
+            "2" : "2",
+            "3" : "3",
+            "4" : "4",
+            "5" : "5",
+            "6" : "6",
+            "7" : "7",
+            "8" : "8",
+            "9" : "9",
+            "scratch_term" : "_ ",
+            "scratch_ranger" : "_󰴉" ,
+            "scratch_musikcube" : "_ ",
+            "scratch_btm" : "_ ",
+            "scratch_geary" : "_ ",
+            "scratch_pavucontrol" : "_󰍰 "
+          },
+        "persistent-workspaces": {
+            "*": 7
+        },
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e-1"
+    },
+    "wlr/taskbar":{
+        "format": "{icon}",
+        "icon-size": 18,
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "on-click-middle": "close",
+        "ignore-list": [
+           "kitty"
+        ],
+        "app_ids-mapping": {
+            "firefoxdeveloperedition": "firefox-developer-edition"
+        },
+        "rewrite": {
+            "Firefox Web Browser": "Firefox",
+            "Foot Server": "Terminal"
+        }
+    },
+
+    "clock": {
+        "format": "{:%I:%M %p}",
+        "rotate": 0,
+        "format-alt": "{:%R 󰃭 %d·%m·%y}",
+        "tooltip-format": "<tt>{calendar}</tt>",
+        "calendar": {
+            "mode": "month",
+            "mode-mon-col": 3,
+            "on-scroll": 1,
+            "on-click-right": "mode",
+            "format": {
+                "months": "<span color='#ffead3'><b>{}</b></span>",
+                "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+                "today": "<span color='#ff6699'><b>{}</b></span>"
+            }
+        },
+        "actions": {
+            "on-click-right": "mode",
+            "on-click-forward": "tz_up",
+            "on-click-backward": "tz_down",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
+    },
+	"hyprland/window": {
+		"max-length": 60,
+		"separate-outputs": false
+	},
+	"memory": {
+		"interval": 5,
+		"format": "  {}%"
+	},
+	"cpu": {
+		"interval": 5,
+		"format": "  {usage:2}%",
+        "tooltip": true
+	},
+    "disk": {
+        "format": "  {free}/{total}",
+        "tooltip": false
+    },
+    "custom/uptime": {
+        "format": "  {} ",
+        "exec": "uptime | awk '{print $3}'|sed 's/,//'",
+        "interval": 60
+    },
+    "custom/mountdevice": {
+        "format": " ",
+        "exec": ""
+    },
+	"custom/packages": {
+		"exec": "pacman -Q | wc -l",
+		"format": "  {}",
+		"interval": 45
+	},
+    "custom/wallpaper" : {
+        "format" : "󰸉",
+        "on-click" : "~/.config/scripts/wallpaper.sh",
+        "tooltip" : false
+    },
+    "custom/chatgpt": {
+        "format": "󰻞",
+        "size" : 4,
+        "on-click": "thorium-browser --app=https://chat.openai.com",
+        "tooltip": false
+    },
+    "bluetooth": {
+        "format": "  {status}",
+        "format-disabled": "",
+        "format-off": "",
+        "interval": 20,
+        "on-click": "blueman-manager"
+    },
+    "network#wifi": {
+        "interval": 10,
+        "interface": "wlp7s0",
+        "family": "ipv4",
+        "format-wifi": "{signalStrength}% {icon}",
+        "format-ethernet": "{ipaddr}}   ",
+        "format-icons": ["󰤯 ", "󰤟 ", "󰤢 ", "󰤥 ", "󰤨 "],
+        "format-disconnected": "󰤮 ",
+        "tooltip": true,
+        "tooltip-format" : "{essid}"
+    },
+    "network#ethernet": {
+        "interval": 10,
+        "interface": "enp8s0",
+        "family": "ipv4",
+        "format-ethernet": "{ipaddr}}   ",
+        "tooltip-format-ethernet": "{ifname}",
+        "format-disconnected": "󰤮 ",
+        "tooltip": true,
+        "tooltip-format" : "{essid}"
+    },
+	"tray": {
+		"icon-size": 20,
+		"spacing": 12
+	},
+    "pulseaudio": {
+        "format": "{icon} {volume}% {format_source}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": " {volume}%",
+        "format-source-muted": " ",
+        "format-icons": {
+            "headphone": " ",
+            "hands-free": "",
+            "headset": "",
+            "phone": " ",
+            "portable": " ",
+            "car": " ",
+            "default": [" ", " ", "  "]
+        },
+        "on-click": "pavucontrol"
+    },
+    "custom/notification": {
+        "tooltip": false,
+        "format": "{icon} {}",
+        "format-icons": {
+            "notification": " <span foreground='red'><sup></sup></span>",
+            "none": " ",
+            "dnd-notification": " <span foreground='red'><sup></sup></span>",
+            "dnd-none": "",
+            "inhibited-notification": " <span foreground='red'><sup></sup></span>",
+            "inhibited-none": " ",
+            "dnd-inhibited-notification": " <span foreground='red'><sup></sup></span>",
+            "dnd-inhibited-none": " "
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "escape": true
+    },
+    "custom/weather" : {
+    "tooltip" : true,
+    "format" : "{}",
+    "interval" : 30,
+    "exec" : "~/.config/waybar/scripts/wttr.py",
+    "return-type" : "json"
+    },
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": "󰂄 {capacity}%",
+        "format-plugged": "󱘖 {capacity}%",
+        "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+        "on-click": "",
+        "tooltip": false
+    },
+    "temperature": {
+        "thermal-zone": 2,
+        "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "critical-threshold": 80,
+        "format-critical": "{temperatureC}°C {icon}",
+        "format": "{temperatureC}°C {icon}",
+        "format-icons": ["", "", ""],
+        "tooltip": "false"
+    },
+    "user": {
+        "format": "{user} ",
+        "interval": 60,
+        "icon": false
+    }
+
+}

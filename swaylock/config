@@ -1,0 +1,60 @@
+ignore-empty-password
+font="Caskaydia Cove Nerd Font Mono"
+font-size=55
+clock
+timestr=%R
+datestr=%a, %e of %B
+
+# Add an image as a background 
+image=~/.config/wallpaper/wall5.jpg
+
+# Fade in time
+fade-in=0.5
+
+# Effect for background
+effect-blur=20x2
+# effect-greyscale
+effect-pixelate=5
+
+# Show/Hide indicator circle
+indicator
+
+#indicator
+indicator-radius=200
+indicator-thickness=25
+indicator-caps-lock
+
+# Define all colors
+
+key-hl-color=F99417
+separator-color=00000000
+
+inside-color=00000099
+inside-clear-color=00000055
+inside-caps-lock-color=ffffff33
+inside-ver-color=00000033
+inside-wrong-color=ffffff00
+
+ring-color=161A30
+ring-clear-color=B6BBC4
+ring-caps-lock-color=ffffff
+ring-ver-color=161A30
+ring-wrong-color=9a031e
+
+line-color=00000000
+line-clear-color=ffffffFF
+line-caps-lock-color=ffffffFF
+line-ver-color=ffffffFF
+line-wrong-color=ffffffFF
+
+text-color=ffffff
+text-clear-color=ffffff
+text-ver-color=ffffff
+text-wrong-color=ffffff
+text-caps-lock-color=000000
+
+bs-hl-color=ffffff
+caps-lock-key-hl-color=ffffffFF
+caps-lock-bs-hl-color=ffffffFF
+disable-caps-lock-text
+text-caps-lock-color=ffffff
