@@ -11,7 +11,7 @@ configuration {
 }
 
 * {
-    background:     #15161EFF;
+    background:     rgba(21, 22, 30, 1);
     background-alt: #1A1B26FF;
     foreground:     #C0CAF5FF;
     selected:       #33467CFF;
@@ -49,22 +49,23 @@ configuration {
 window {
     /* properties for window widget */
     transparency:                "real";
-    location:                    west;
-    anchor:                      west;
+    location:                    northwest;
+    anchor:                      northwest;
     fullscreen:                  false;
     width:                       450px;
-    height:                      100%;
-    x-offset:                    0px;
-    y-offset:                    0px;
+    height:                      80%;
+    x-offset:                    12px;
+    y-offset:                    12px;
+    cursor:                      "pointer";
 
     /* properties for all widgets */
     enabled:                     true;
     margin:                      0px;
     padding:                     0px;
     border:                      0px solid;
-    border-radius:               0px;
+    border-radius:               12px;
     border-color:                @border-colour;
-    cursor:                      "default";
+    cursor:                      "pointer";
     /* Backgroud Colors */
     background-color:            @background-colour;
     /* Backgroud Image */
@@ -121,7 +122,7 @@ entry {
     background-color:            inherit;
     text-color:                  inherit;
     cursor:                      text;
-    placeholder:                 "search...";
+    placeholder:                 "Global Search...";
     placeholder-color:           inherit;
 }
 num-filtered-rows {
@@ -190,8 +191,14 @@ element {
     border-color:                @border-colour;
     background-color:            transparent;
     text-color:                  @foreground-colour;
-    cursor:                      pointer;
+    cursor:                      "pointer";
 }
+
+element hover {
+    background-color:            @selected;
+    text-color:                  @foreground-colour;
+}
+
 element normal.normal {
     background-color:            var(normal-background);
     text-color:                  var(normal-foreground);
@@ -232,13 +239,13 @@ element-icon {
     background-color:            transparent;
     text-color:                  inherit;
     size:                        24px;
-    cursor:                      inherit;
+    cursor:                      "pointer";
 }
 element-text {
     background-color:            transparent;
     text-color:                  inherit;
     highlight:                   inherit;
-    cursor:                      inherit;
+    cursor:                      "pointer";
     vertical-align:              0.5;
     horizontal-align:            0.0;
 }
@@ -262,7 +269,7 @@ button {
     border-color:                @border-colour;
     background-color:            transparent;
     text-color:                  inherit;
-    cursor:                      pointer;
+    cursor:                      "pointer";
 }
 button selected {
     background-color:            var(normal-foreground);

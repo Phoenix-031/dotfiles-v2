@@ -1,6 +1,11 @@
 {
-	"layer": "top",
+	"layer": "bottom",
 	"position": "top",
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    "height": 0,
+    "mode" : "dock",
 
 	"modules-left": [
         "custom/updates",
