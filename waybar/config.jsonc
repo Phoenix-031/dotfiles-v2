@@ -151,7 +151,6 @@
     },
     "network#wifi": {
         "interval": 10,
-        "interface": "wlp7s0",
         "family": "ipv4",
         "format-wifi": "{signalStrength}% {icon}",
         "format-ethernet": "{ipaddr}}   ",
@@ -162,7 +161,7 @@
     },
     "network#ethernet": {
         "interval": 10,
-        "interface": "enp8s0",
+        "interface": "wlan1",
         "family": "ipv4",
         "format-ethernet": "{ipaddr}}   ",
         "tooltip-format-ethernet": "{ifname}",
