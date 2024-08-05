@@ -1,0 +1,1 @@
+lsblk -rpo "name,type,size,mountpoint" | grep -v 'sda' | awk '$2=="disk" && $4=="" && $5=="" {printf "%s (%s %s)\t%s\n", $1, $6, $7, $3}' | rofi -dmenu

@@ -1,0 +1,500 @@
+clar
+clear
+brillo -G
+clear
+make install GROUP=_brillo
+code .
+cd repos/brillo/
+ls
+clear
+sudo make install.setgid
+clear
+reflector --version
+clear
+reflector
+reflector --sort age
+clear
+sudo mount /dev/sdb1 /mnt/extdrive/
+lsblk -o NAME,SIZE,TYPE,MOUNTPOINT | grep 'disk\|part' | grep -v 'loop' | awk '$1=$1' | tr '\n' ' ' | sed 's/ *$//'
+clear
+lsblk -o NAME,SIZE,TYPE,MOUNTPOINT | grep 'disk\|part' | grep -v 'loop' | awk '$1=$1' | tr '\n' ' ' | sed 's/ *$//'
+rofi
+rofi -show drun
+dolphin
+yad
+sudo pacman -S yad
+clear
+ls
+cd ..
+ls
+cd debayan/
+ls
+yay list
+clear
+cd .config/way
+cd .config/waybar/
+code .
+code .
+clear
+cd ..
+ls
+cd hypr/
+code .
+eog
+clear
+cd ../waybar/
+code .
+cd ../scripts/
+s
+ls
+chmod +x mount-unmount.sh
+clear
+./mount-unmount.sh 
+clear
+~/.config/rofi/powermenu/powermenu.sh 
+clear
+exec ~/.config/rofi/powermenu/powermenu.sh 
+chmod 700 ~/.ssh/
+clear
+rofi show window
+rofi show drun
+rofi show -drun
+rofi -show  drun
+cd Desktop/
+ls
+cd gfst-bank/
+ls
+code .
+clear
+cd ..
+git clone git@personal:Jakirul458/gfst-backend.git
+git clone https://github.com/Jakirul458/gfst-backend.git
+git clone git@personal:Jakirul458/gfst-backend.git
+git clone git@work:Jakirul458/gfst-backend.git
+git clone git@pixbox:Jakirul458/gfst-backend.git
+git clone git@personal:Jakirul458/gfst-backend.git
+git clone git@personal:Jakirul458/gfst-backend.git
+git clone git@personal:Jakirul458/gfst-backend.git
+git clone git@personal:Jakirul458/gfst-backend.git
+git clone git@personal:Jakirul458/gfst-backend.git
+git clone git@personal:Jakirul458/gfst-backend.git
+git clone git@personal:Jakirul458/gfst-backend.git
+git clone git@personal:Jakirul458/gfst-backend.git
+git clone git@personal:Jakirul458/gfst-backend.git
+git clone git@personal:Jakirul458/gfst-backend.git
+git clone git@personal:Jakirul458/gfst-backend.git
+clear
+cd ../.ssh/
+ls
+rm known_hosts.old 
+clear
+ls
+ssh-keygen -t ed25519 -C "pradhandebayan@gmail.com"
+clear
+eval "$(ssh-agent -s)"
+ssh-add personal
+clear
+copyq
+clear
+cd ..
+cd Desktop/
+ls
+git clone git@personal:Jakirul458/gfst-backend.git
+cd ../.ssh/
+cat personal.pub 
+ssh-add personal
+clear
+cd ..
+cd Desktop/
+ls
+ls -a
+git clone git@personal:Jakirul458/gfst-backend.git
+git clone git@personal:Jakirul458/gfst-backend.git
+cd ../.ssh/
+code /
+code .
+clear
+cd Desk
+cd ../Desktop/
+git clone git@personal:Jakirul458/gfst-backend.git
+git clone git@personal:Jakirul458/gfst-backend.git
+git clone git@personal:Jakirul458/gfst-backend.git
+cd PIXBOX/PixboxServer/
+code.
+code .
+cd PIXBOX/
+ls
+cd PixboxEditor/
+ls
+code .
+ssh --version
+clear
+cd .ssh/
+ls
+cd .ssh/
+ls
+ssh-keygen -t ed25519 -C "debayan.pixbox@gmail.com"
+clear
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/pixbox
+clear
+cat pixbox.pub
+sudo pacman -S openssh
+clear
+cd .config/
+ls
+cd ../.ssh/
+code .
+reboot
+cd PIXBOX/
+ls
+cd PixboxEditor/
+code .
+cd ../PixboxServer/
+code .
+cd Desktop/
+git clone git@pixbox:PixboxMultimedia/PixboxEditor.git
+clear
+cd .ssh/
+ssh-keygen -t ed25519 -C "debayan.pixbox@gmail.com"
+clear
+ssh-add pixbox
+eval "$(ssh-agent -s)"
+ssh-add pixbox
+clear
+ssh-add -l
+clear
+ls
+cat pixbox.pub 
+cd .ssh/
+code .
+cd Desktop/
+git clone git@pixbox:PixboxMultimedia/Pixbox-Editor.git
+git@github.com:PixboxMultimedia/Pixbox-Editor.git
+git clone git@github.com:PixboxMultimedia/Pixbox-Editor.git
+git clone git@pixbox:PixboxMultimedia/Pixbox-Editor.git
+clear
+ssh-add -l
+clear
+eval "$(ssh-agent -s)"
+cd .ss
+cd ../.ssh/
+ls
+ssh-add pixbox
+clear
+cd ../Desktop/
+git clone git@pixbox:PixboxMultimedia/Pixbox-Editor.git
+clear
+git clone git@github.com:PixboxMultimedia/Pixbox-Editor.git
+clear
+cd ../Downloads/
+git clone git@pixbox:PixboxMultimedia/Pixbox-Editor.git
+reboot
+cd PIXBOX/
+ls
+cd PixboxEditor/
+code .
+cd ../PixboxServer/
+ls
+code .
+cd PIXBOX/PixboxEditor/
+code .
+cd PIXBOX/
+cd Pixbox-Editor/
+code .
+git clone git@pixbox:PixboxMultimedia/Pixbox-Editor.git
+clear
+cd .ssh/
+code .
+cd .ssh/
+clear
+ls
+ssh-keygen -t ed25519 -C "pradhandebayan@gmail.com"
+eval "$(ssh-agent -s)"
+ssh-add -l
+cd .ssh/
+code .
+ping google.com
+cd Desktop/
+git clone git@pixbox:PixboxMultimedia/PixboxEditor.git
+git clone git@personal.github.com:PixboxMultimedia/PixboxEditor.git
+git clone git@pixbox.github.com:PixboxMultimedia/PixboxEditor.git
+cd ../Downloads/
+git clone git@pixbox.github.com:PixboxMultimedia/PixboxEditor.git
+git clone git@pixbox:PixboxMultimedia/PixboxEditor.git
+git clone git@pixbox.github.com:PixboxMultimedia/PixboxEditor.git
+git clone git@personal.github.com:PixboxMultimedia/PixboxEditor.git
+clear
+cd ../Documents/
+git clone git@personal.github.com:PixboxMultimedia/PixboxEditor.git
+clear
+waybar
+cd .config/waybar/
+code .
+code .
+copyq 
+clear
+waybar
+cd .config/waybar/
+code .
+waybar
+sudo pacman -S rofi
+cd .config/rofi/
+code .
+cd .config/hypr/
+code .
+hyprctl reload
+hyprctl reload
+hyprctl reload
+hyprctl reload
+hyprctl reload
+hyprctl reload
+reboot
+xprop
+cd .config/hypr/
+code .
+sudo pacman -Rns rofi
+sudo pacman -Rns rofi rofi-calc rofi-emoji
+sudo pacman -S rofi rofi-calc rofi-emoji
+npm i swaylock
+sudo pacman -S swaylock
+ping google.com
+sudo pacman -S swaylock
+clear
+reboot
+cd .config/swaylock/
+code .
+swaylock
+ping google.com
+sudo pacman -S rofi
+ping google.com
+clear
+reboot
+ping google.com
+ping google.com
+ping google.com
+ping google.com
+ping google.com
+ping google.com
+ping google.com
+ping google.com
+ping google.com
+ping google.com
+ping google.com
+ping google.com
+ping google.com
+ping google.com
+ping google.com
+ping google.com
+ping google.com
+ping google.com
+ping google.com
+ping google.com
+ping google.com
+sudo pacman -S swaylock
+clear
+swaylock
+swaylock
+cd .config/
+ls
+cd swaylock/
+code .
+cd ../wallpaper/
+ls
+swaylock -c
+swaylock -c red
+yay -S wlogout swaylock-effects
+clear
+sudo pacman -Rns swaylock
+clear
+sudo pacman -Rns rofi
+sudo pacman -Rns rofi rofi-calc rofi-emoji
+yay -S rofi
+yay -S rofi-emoji rofi-calc
+clear
+rofi -show drun
+yay -S rofi-wayland
+cd .config/rofi/
+ls
+code .
+cd ../hypr/
+code .
+cd .config/scripts/
+code .
+mount /dev/sdb1 /mnt/extdrive/
+sudo mount /dev/sdb1 /mnt/extdrive/
+unmount /dev/sdb1
+clear
+umount /dev/sdb1
+sudo umount /dev/sdb1
+clear
+cd .config/rofi/
+code .
+ping google.com
+shutdown now
+ls
+clear
+cd PIXBOX/
+ls
+cd PixboxEditor/
+code .
+cd ../PixboxServer/
+code .
+cd PIXBOX/Pixbox-Editor/
+code .
+cd PIXBOX/
+ls
+cd PixboxEditor/
+code .
+cd PIXBOX/PixboxServer/
+code .
+sudo systemctl enable bluetooth.service
+sudo systemctl start bluetooth.service
+clear
+cd PIXBOX/Pixbox-Editor/
+code .
+cd PIXBOX/PixboxEditor/
+code .
+ping google.com
+shutdown now
+cd PIXBOX/
+ls
+cd PixboxEditor/
+code .
+cd ../PixboxServer/
+code .
+cd PIXBOX/
+ls
+cd Pixbox-Editor/
+code .
+c PIXBOX/
+cd PIXBOX/PixboxEditor/
+code .
+ls
+ls -a
+cd repos/
+git clone https://github.com/SylEleuth/gruvbox-plus-icon-pack.git
+cd -rv gruvbox-plus-icon-pack/ ~/local/share/icons
+cp -rv gruvbox-plus-icon-pack/ ~/local/share/icons
+cp -rv gruvbox-plus-icon-pack/ ~/.local/share/icons
+yay -S gruvbox-plus-icon-theme
+cd .local/
+ls
+cd share/icons/o
+cd share/icons/
+ls
+cd Gruvbox-Plus-Dark/
+ls
+clear
+yay -S qt5
+clear
+sudo pacman -S qt5ct
+sudo pacman -S qt6ct
+reboot
+sudo pacman -S rofi-emoji
+clear
+sudo pacman -Rns rofi-emoji
+clear
+sudo pacman -S rofi-emoji
+clear
+rofi -show run
+rofi -show emoji
+cd .config/rofi/
+ls
+code .
+rofi -h
+sudo pacman -Syu
+rofi -show window
+sudo pacman -S pipewire wireplumber
+yay -S xdg-desktop-portal-hyprland-git
+sudo systemctl --user status pipewire wireplumber
+clear
+sudo systemctl enable pipewire
+clear
+sudo systemctl start dbus
+systemctl --user restart pipewire
+systemctl --user restart wireplumber
+systemctl --user enable pipewire
+systemctl --user enable wireplumber
+clear
+echo $DBUS_SESSION_BUS_ADDRESS
+systemctl --user status pipewire wireplumber
+sudo systemctl --user status pipewire wireplumber
+sudo systemctl --user status pipewire wireplumber
+clear
+speedtest
+clear
+sudo pacman -S speedtest
+sudo pacman -S speedtest-cli
+speedtest
+systemctl --user import-environment QT_QPA_PLATFORMTHEME
+dbus-update-activation-environment --systemd --all
+pacman -S xdg-desktop-portal-hyprland
+sudo pacman -S xdg-desktop-portal-hyprland
+sudo pacman -S xdg-desktop-portal-gtk
+reboot
+sudo pacman -S qt6-wayland qt5-wayland
+systemctl --user status xdg-desktop-portal-hyprland
+sudo systemctl --user status xdg-desktop-portal-hyprland
+sudo pacman -Rns plasma
+sudo pacman -Rns dolphin
+sudo pacman -Rns plasma
+sudo pacman -Rns okular
+sudo pacman -Rns plasma
+clear
+sudo pacman -S wireplumber pipewire
+clear
+systemctl --user status pipewire.service
+sudo systemctl --user status pipewire.service
+clear
+sudo systemctl --user enable psd
+sudo systemctl --user enable psd
+loginctl session-status
+clear
+sudo loginctl session-status
+sudo pacman -S dbus-x11
+dbus-user-session
+dbus-broker
+dbus
+sudo pacman -S dbus
+sudo pacman -S dbus-broker
+sudo pacman -S dbus-user-session
+sudo pacman -S dbus-x11
+clear
+systemctl status dbus
+sudo su
+sudo systemctl --user restart pipewire
+systemctl --user restart wireplumber
+lclear
+clear
+sudo systemctl --user enable pipewire
+systemctl --user enable wireplumber
+clear
+sudo systemctl start dbus
+sudo systemctl --user restart pipewire
+clear
+reboot
+sudo systemctl status pipewire
+clear
+sudo pacman -Qsq "(pulse|pipe)
+sudo pacman -Qsq "(pulse|pipe)"
+sudo pacman -S pipewire pipewire-pulse pipewire-alsa wireplumber
+sudo systemctl --user restart pipewire
+systemctl --user restart wireplumber
+clear
+sudo systemctl --user enable pipewire
+systemctl --user enable wireplumber
+ifconfig
+iwconfig
+clear
+thorium
+clear
+cd .config/waybar/
+ls
+code .
+ifconfig
+waybar
+cd .config/waybar/
+code .
+waybar
+waybar

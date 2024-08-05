@@ -1,0 +1,44 @@
+[user]
+	email = pradhandebayan@gmail.com
+	name = Debayan Pradhan
+[alias]
+	br = branch
+	st = status
+	c = commit -m
+	sw = switch
+	co = checkout
+	rfl = reflog
+	last = log -1 HEAD --stat
+	rv = remote -v
+	cob = checkout -b
+	lg = log --oneline --graph --decorate --all
+
+	sth = stash
+	stl = stash list
+
+
+
+	d = diff
+	ds = diff --stat
+	dc = diff --cached
+
+
+	dv = difftool -t vimdiff -t
+	gl = config --global -l
+	puo = pull origin
+	publish = "push -u origin"
+	fixup = "commit --fixup"
+	hist = "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
+	bdf = "blame --diff"
+	cane = "commit --amend --no-edit"
+	up = "pull --rebase"
+	slog = "shortlog -sn"
+	who = "shortlog --summary --numbered --email"
+
+	alias = "config --get-regexp alias"
+[init]
+	defaultBranch = main
+[pull]
+	ff = true
+[core]
+	editor = /usr/bin/vim
